@@ -1,0 +1,205 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+main{
+    width: 90%;
+    margin: 5rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    margin: 2rem 0;
+}
+
+.hero .title{
+    width: 80%;
+    margin: 1rem auto 2rem auto;
+    line-height: 3rem;
+}
+
+.hero .title h1{
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.description{
+    text-align: center;
+}
+
+.hero .description p{
+    font-size: 1.8rem;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+
+/* working with rating box  */
+
+#rating{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rate{
+    margin-bottom: 3rem;
+}
+
+.rate-stars{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.rate-text{
+    font-size: 1.8rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+ 
+/* working with testimony containers */
+#testimony {
+    margin: 2rem 0 4rem 0;
+}
+
+.testimony-container{
+    background-color: hsl(300, 43%, 22%);
+    margin-bottom: 2rem;
+    padding: 3rem 3rem;
+    border-radius: 1rem;
+}
+
+.testimonial-bio{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-bio .avatar{
+    margin-right: 2rem;
+}
+.testimonial-bio .avatar img{
+    border-radius: 50%;
+    width: 4rem;
+}
+
+.testimonial-bio .info .name{
+    color: white;
+    font-weight: 500;
+}
+
+.testimonial-bio .info .buyer-status p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(333, 80%, 67%);
+}
+
+.testimonial-text p{
+    font-size: 1.75rem;
+    color: white;
+    font-weight: 500;
+}
+
+/* setting media queries */
+@media only screen and (min-width: 1000px) {
+
+
+    /* intro page for desktop */
+    #intro-page{
+        flex-direction: row;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .hero .title{
+        text-align: left;
+        margin: 0 0 4rem 0;
+    }
+
+    .hero .title h1{
+        text-align: left;
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .hero .description{
+        text-align: left;
+        line-height: 2.5rem;
+    }
+
+    .hero {
+        max-width: 40%;
+        margin-bottom: 5rem;
+    }
+
+    #rating{
+        min-width: 60%;
+    }
+
+    .rate{
+        margin-bottom: 5rem;
+        display: flex;
+        gap: 0 2rem;
+        justify-content: center;
+    }
+
+    .rate-stars {
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    .rate2{
+        transform: translate(20%, 0);
+    }
+
+    .rate3 {
+        transform: translate(40%, 0);
+    }
+
+
+    
+    #testimony{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        max-width: 80%;
+        margin: 4rem auto;
+    }
+
+    .testimony-container{
+        box-shadow: 5px 10px 1rem rgba(0, 0, 0, 0.432);
+    }
+
+    .testimony2{
+        transform: translate(0, 15%);
+    }
+    
+    .testimony3 {
+        transform: translate(0, 30%);
+    }
+
+
+}
+
